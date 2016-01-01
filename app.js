@@ -4,7 +4,7 @@ var app = {
     },
     loadNavbar: function(){
         $.ajax({
-            url: '/html/inc/navbar.html',
+            url: 'html/inc/navbar.html',
             success: function(res) {
                 var template = Handlebars.compile(res);
                 var html = template();
