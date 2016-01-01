@@ -1,0 +1,84 @@
+.image {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+.image img {
+    width: 120px;
+}
+.version-zh {
+    color: #000;
+}
+.version-en {
+    color: #333;
+}
+.version {
+	font-size: 1em;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	text-align: center;
+}
+.cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: block;
+	z-index: 1000;
+	text-align: center;
+	display: none;
+}
+.cover .tips {
+    width: 80%;
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 auto;
+    line-height: 1.7em;
+    text-align: center;
+}
+.cover .arrow {
+    height: 141px;
+    margin: 16px 80px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.download {
+	text-decoration: none;
+	display: block;
+	background: none;
+	width: 10rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5em;
+	overflow: hidden;
+}
+.download:active, .download:hover, .download:visited {
+    text-decoration: none;
+}
+.download img {
+    width: 100%;
+}
+
+.app-name {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+@media (max-width: 640px) {
+    /*.image {
+        width: 60%;
+        height: 40%;
+    }*/
+    .image img{
+        width: 60%;
+    }
+}

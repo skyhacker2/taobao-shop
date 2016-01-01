@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>淘宝代码生成器</title>
+        <% include ../inc/header.html%>
+    </head>
+    <body>
+        <% include ../inc/navbar.html%>
+        <!--必要代码开始--------------------------------------------------------------------------------------------------->
+        <div id="page">
+            <div id="content" class="eshop head-expand tb-shop" >
+                <div id="content"  style="left:50%">
+                    <div class="layout grid-m0 J_TLayout" data-widgetid="24783721" data-componentid="231" data-context="bd" data-prototypeid="231" data-id="24783721">
+                        <div class="col-main">
+                            <div class="main-wrap J_TRegion" data-modules="main" style="overflow:visible;" data-width="b950">
+                                <div class="J_TModule" data-widgetid="24783722"  id="shop24783722"  data-componentid="5003"  data-spm='110.0.5003-24783722'  microscope-data='5003-24783722' data-title="自定义内容区"  >
+                                    <div class="skin-box tb-module tshop-pbsm tshop-pbsm-shop-self-defined"> <s class="skin-box-tp"><b></b></s>
+                                        <div class="skin-box-bd clear-fix"> <span>
+                                            <!--展示代码开始-->
+
+                                            <!--展示代码结束-->
+                                        </span> </div>
+                                        <s class="skin-box-bt"><b></b></s>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--必要代码结束--------------------------------------------------------------------------------------------------->
+
+        <div class="container">
+
+        </div>
+        <script id="template-zhanshi" type="text/x-handlebars-template">
+            <div style="height:1257px;">
+                <div class="footer-more-trigger" style="left:50%;top:auto;border:none;padding:0;">
+                    <div class="footer-more-trigger" style="left:-623.5px;top:auto;border:none;padding:0;">
+                    	<!-- 开始表格 -->
+                        <div style="width:1246px;height:760px;">
+                        </div><!-- 结束表格-->
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script>
+            $(function(){
+                var source = $("#template-zhanshi").html();
+                var template = Handlebars.compile(source);
+                function render(data) {
+                    var html = template(data);
+                    $(".skin-box-bd").html(html);
+                }
+                $.ajax({
+                    url:"/PureJ/zhanshi1.json",
+                    success:function(res) {
+                        render(data);
+                    }
+                })
+            });
+        </script>
+
+    </body>
+</html>

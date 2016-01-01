@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>淘宝代码生成器</title>
+        <script src="/js/jquery/jquery-1.11.1.min.js"></script>
+        <script src="/app.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="/js/wtk/main.js"></script>
+        <script src="/js/handlebars-v4.0.5.js"></script>
+        <!--淘宝里的开始-->
+        <script>
+            window.g_hb_monitor_st = +new Date();
+                        window.g_config = {appId:2, assetsHost:"http://a.tbcdn.cn",toolbar:false, pageType:"wangpu"};
+                        window.shop_config = {
+                "shopId":"36052732",
+                "siteId":"1",
+                "userId":"58604862",
+                "user_nick": "%E7%88%B1%E4%BD%A0885678",
+                "template": {
+                    "name": "",
+                    "id": "206531",
+                    "design_nick": ""
+                }
+            };
+            window.shop_config.isView = true;
+                        window.shop_config.isvStat = {
+                nickName:'%E7%88%B1%E4%BD%A0885678',
+                userId:'58604862',
+                shopId:'36052732',
+                siteId:'1',
+                siteCategoryId:'2',
+                itemId:'',
+                shopStats:'',
+                validatorUrl:'http://store.taobao.com/tadget/shop_stats.htm',
+                templateId:'206531',
+                templateName:''
+            };
+                        window._poc = window._poc || [];
+                        window._poc.push(["_trackCustom", "tpl", "new_shop"]);
+        </script>
+        <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css?t=20130228.css"/>
+        <link rel="stylesheet"   href="http://a.tbcdn.cn/apps/taesite/platinum/stylesheet/??view/footer-min.css,view/copyright-min.css,view/layout-min.css,common/mods/header/header-min.css,/common/mods/ww-hover/default-min.css,common/modules-sys-default-min.css,common/modules-other-default-min.css?t=20130201.css"/>
+        <link rel="stylesheet" href="http://a.tbcdn.cn/??/apps/taesite/platinum/stylesheet/common/templates/fengxun/red/skin-new.css?t=20121031.css"/>
+        <script src="http://a.tbcdn.cn/??s/kissy/1.3.0/seed-min.js,p/global/1.0/global-min.js?t=20130228.js"></script>
+        <script src="http://a.tbcdn.cn/apps/taesite/platinum/scripts/wangpu/init-min.js?t=20130228.js"></script>
+        <!--     <style>
+                            #page #content #bd {width:100%}
+        </style>-->
+        <!--淘宝里的结束-->
+
+        <style>
+            body {
+                background: #b4d96f;
+            }
+        </style>
+    </head>
+    <body>
+        <!--必要代码开始--------------------------------------------------------------------------------------------------->
+        <div id="page">
+            <div id="content" class="eshop head-expand tb-shop" >
+                <div id="content"  style="left:50%">
+                    <div class="layout grid-m0 J_TLayout" data-widgetid="24783721" data-componentid="231" data-context="bd" data-prototypeid="231" data-id="24783721">
+                        <div class="col-main">
+                            <div class="main-wrap J_TRegion" data-modules="main" style="overflow:visible;" data-width="b950">
+                                <div class="J_TModule" data-widgetid="24783722"  id="shop24783722"  data-componentid="5003"  data-spm='110.0.5003-24783722'  microscope-data='5003-24783722' data-title="自定义内容区"  >
+                                    <div class="skin-box tb-module tshop-pbsm tshop-pbsm-shop-self-defined"> <s class="skin-box-tp"><b></b></s>
+                                        <div class="skin-box-bd clear-fix"> <span>
+                                            <!--展示代码开始-->
+
+                                            <!--展示代码结束-->
+                                        </span> </div>
+                                        <s class="skin-box-bt"><b></b></s>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--必要代码结束--------------------------------------------------------------------------------------------------->
+
+        <div class="container" style="padding-bottom:50px;">
+            <div id="config" class="row" style="border: 1px #f5f5f5 solid; background:#ffffff; padding:20px;">
+
+            </div>
+            <br/>
+            <div class="row">
+                <h3>生成的代码</h3>
+                <textarea id="generate-code" style="width:100%; min-height:300px;">
+                </textarea>
+            </div>
+        </div>
+    </body>
+    <script id="template-feature-product" type="text/x-handlebars-template">
+        <div style="height:1200px;">
+            <div class="footer-more-trigger" style="left:50%;top:auto;border:none;padding:0;">
+                <div class="footer-more-trigger" style="left:-623.5px;top:auto;border:none;padding:0;">
+                	<!-- 开始表格 -->
+                    <p style="color:#ffffff;font-size:32px;width:1246px;margin-bottom:30px;">Featured Products</p>
+                    <div style="width:1246px;height:1118px;">
+                        {{#each row}}
+                            {{#compare @index 3}}
+                            <div class="cell" style="width:408px;height:552px;float:left; background:#c7e494;margin-top:10px;">
+                            {{else}}
+                            <div class="cell" style="width:408px;height:552px;float:left; background:#c7e494;margin-left:10px;margin-top:10px;">
+                            {{/compare}}
+                                <div class="pop{{className}}" style="width408px; height:408px; background:url({{image}})">
+                                    <div class="J_TWidget" data-widget-config="{'trigger':'.pop{{className}}','align':{'node':'.pop{{className}}','offset':[0,0],'points':['cc','cc']}}" data-widget-type="Popup" style="display:none;">
+        	                            <div style="width:408px;background:url(https://img.alicdn.com/imgextra/i2/2729439084/TB2xXV5jXXXXXcSXXXXXXXXXXXX_!!2729439084.png);height:408px;">
+        	                                <a href="{{itemLink}}" style="width:408px;display:block;height:408px;text-align:center;padding-top:0px;text-decoration:none;" target="_blank">
+                                            </a>
+        	                            </div>
+        	                        </div>
+                                </div>
+                                <div class="thumb1-title">
+                                    <p style="font-size:16px;margin-top: 15px;margin-left: 9px;color: #ffffff;font-family:microsoft yahei;">RMB<span style="font-size: 35px;">{{price}}</span></p>
+                                    <p style="margin-top:17px; margin-left:9px;font-weight:bold;color:#ffffff;font-family:microsoft yahei;">{{title}}</p>
+                                    <p style="margin-top:23px;margin-left:9px;font-family:microsoft yahei;"><a href="{{itemLink}}" class="J_CartPluginTrigger um-cart um-ib" target="_blank"><img src="https://img.alicdn.com/imgextra/i4/2729439084/TB2uHdWjXXXXXaXXpXXXXXXXXXX_!!2729439084.png"></img></a></p>
+                                </div>
+                            </div>
+
+                        {{/each}}
+                    </div><!-- 结束表格-->
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="template-config" type="text/x-handlebars-template">
+        <form class="form-horizontal">
+            {{#each row}}
+            <div style="background:#f5f5f5; margin:10px;padding:10px;">
+                <div class="form-group">
+                    <label for="image" class="col-sm-2 control-label">图片{{@index}}</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" class="image" name="image" value="{{image}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="price" class="col-sm-2 control-label">价钱{{@index}}</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" class="price" name="price" value="{{price}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="title" class="col-sm-2 control-label">标题{{@index}}</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" class="title" name="title" value="{{title}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="itemLink" class="col-sm-2 control-label">商品链接{{@index}}</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" class="itemLink" name="itemLink" value="{{itemLink}}">
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button id="generateButton" onclick="generate();" type="button" class="btn btn-default">确定</button>
+                </div>
+            </div>
+        </form>
+    </script>
+    <script>
+        var dataString = localStorage["purej_feature_product_data"];
+        var data = {};
+        if (dataString) {
+            data = JSON.parse(dataString);
+        } else {
+            data = {
+                "row":[
+                    {
+                        "className": app.generateShortId(),
+                        "image":"https://img.alicdn.com/imgextra/i3/2729439084/TB2JSGljXXXXXXgXXXXXXXXXXXX_!!2729439084.jpg",
+                        "price": "100",
+                        "title": "这是一个标题",
+                        "itemLink": "#"
+                    },
+                    {
+                        className: app.generateShortId(),
+                        "image":"https://img.alicdn.com/imgextra/i4/2729439084/TB2IVxTjXXXXXaFXpXXXXXXXXXX_!!2729439084.jpg",
+                        "price": "100",
+                        "title": "这是一个标题",
+                        "itemLink": "#"
+                    },
+                    {
+                        className: app.generateShortId(),
+                        "image":"https://img.alicdn.com/imgextra/i3/2729439084/TB2JSGljXXXXXXgXXXXXXXXXXXX_!!2729439084.jpg",
+                        "price": "100",
+                        "title": "这是一个标题",
+                        "itemLink": "#"
+                    },
+                    {
+                        className: app.generateShortId(),
+                        "image":"https://img.alicdn.com/imgextra/i3/2729439084/TB2JSGljXXXXXXgXXXXXXXXXXXX_!!2729439084.jpg",
+                        "price": "100",
+                        "title": "这是一个标题",
+                        "itemLink": "#"
+                    },
+                    {
+                        className: app.generateShortId(),
+                        "image":"https://img.alicdn.com/imgextra/i3/2729439084/TB2JSGljXXXXXXgXXXXXXXXXXXX_!!2729439084.jpg",
+                        "price": "100",
+                        "title": "这是一个标题",
+                        "itemLink": "#"
+                    },
+                    {
+                        className: app.generateShortId(),
+                        "image":"https://img.alicdn.com/imgextra/i3/2729439084/TB2JSGljXXXXXXgXXXXXXXXXXXX_!!2729439084.jpg",
+                        "price": "100",
+                        "title": "这是一个标题",
+                        "itemLink": "#"
+                    }
+                ]
+            }
+        }
+        templates = {};
+        function render(data) {
+            var html = templates["template-feature-product"](data);
+            $("#generate-code").html(html);
+            $(".skin-box-bd").html(html);
+        }
+        $(function(){
+            Handlebars.registerHelper("compare",function(v1,v2,options){
+                 if(v1 % 3 == 0){
+                        //满足添加继续执行
+                        return options.fn(this);
+                    } else{
+                        //不满足条件执行{{else}}部分
+                        return options.inverse(this);
+                    }
+            });
+
+            $('script[type="text/x-handlebars-template"]').each(function() {
+                html = $(this).html();
+                name = $(this).attr("id");
+                templates[name] = Handlebars.compile(html);
+            });
+            var source = $("#template-feature-product").html();
+            var template = Handlebars.compile(source);
+
+
+            $("#config").html(templates["template-config"](data));
+            render(data);
+        });
+        function generate() {
+            $("input[name='image']").each(function(index){
+                var value = $(this).val();
+                data["row"][index]["image"] = value;
+            });
+            $("input[name='price']").each(function(index) {
+                var value = $(this).val();
+                data["row"][index]["price"] = value;
+            });
+            $("input[name='title']").each(function(index) {
+                var value = $(this).val();
+                data["row"][index]["title"] = value;
+            });
+            $("input[name='itemLink']").each(function(index) {
+                var value = $(this).val();
+                data["row"][index]["itemLink"] = value;
+            });
+            localStorage["purej_feature_product_data"] = JSON.stringify(data);
+            // render(data);
+            //alert('生成成功!');
+            location.reload();
+        }
+    </script>
+
+
+</html>

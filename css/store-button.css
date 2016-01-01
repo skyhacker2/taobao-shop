@@ -1,0 +1,67 @@
+.apple-btn {
+  width: 215px;
+  padding: 10px 0px 11px 0px;
+  margin-top: 10px;
+}
+.apple-btn i {
+  font-size: 65px;
+  margin-right: 0 !important;
+}
+.apple-btn strong {
+  font-size: 25px;
+  text-shadow: 1px 2px 0px #346598;
+  color: #fff;
+  line-height: 24px;
+}
+.apple-btn small {
+  font-size: 75%;
+}
+.apple-btn .btn-text {
+  margin-top: 6px;
+}
+.android-btn {
+  width: 215;
+  padding: 13px 17px 13px 0px;
+  margin-top: 10px;
+  border-color: #000;
+  background-color: #000;
+}
+.android-btn strong {
+  font-size: 25px;
+  line-height: 24px;
+  color: #fff;
+}
+.android-btn small {
+  font-size: 75%;
+  color: #fff;
+}
+.android-btn .btn-text {
+  margin-top: 6px;
+}
+.android-btn:hover {
+  background-color: #272727;
+}
+.windows-btn {
+  width: 250px;
+  background-color: #008A00;
+  padding: 13px 5px 13px 0px;
+  border-color: #055805;
+  margin-top: 10px;
+}
+.windows-btn:hover {
+  background-color: #008A00;
+}
+.windows-btn strong {
+  font-size: 25px;
+  line-height: 24px;
+}
+.windows-btn small {
+  font-size: 75%;
+}
+i {
+    font-size: 50px !important;
+    margin-right: 0 !important;
+    margin-left: 20px;
+    float: left;
+    color: #ffffff;
+}
