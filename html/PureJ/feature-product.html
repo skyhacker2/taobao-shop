@@ -138,25 +138,25 @@
             {{#each row}}
             <div style="background:#f5f5f5; margin:10px;padding:10px;">
                 <div class="form-group">
-                    <label for="image" class="col-sm-2 control-label">图片{{@index}}</label>
+                    <label for="image" class="col-sm-2 control-label">图片{{addOne @index}}</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" class="image" name="image" value="{{image}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="price" class="col-sm-2 control-label">价钱{{@index}}</label>
+                    <label for="price" class="col-sm-2 control-label">价钱{{addOne @index}}</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" class="price" name="price" value="{{price}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="title" class="col-sm-2 control-label">标题{{@index}}</label>
+                    <label for="title" class="col-sm-2 control-label">标题{{addOne @index}}</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" class="title" name="title" value="{{title}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="itemLink" class="col-sm-2 control-label">商品链接{{@index}}</label>
+                    <label for="itemLink" class="col-sm-2 control-label">商品链接{{addOne @index}}</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" class="itemLink" name="itemLink" value="{{itemLink}}">
                     </div>
@@ -238,6 +238,9 @@
                         //不满足条件执行{{else}}部分
                         return options.inverse(this);
                     }
+            });
+            Handlebars.registerHelper("addOne", function(index) {
+                return index+1;
             });
 
             $('script[type="text/x-handlebars-template"]').each(function() {
